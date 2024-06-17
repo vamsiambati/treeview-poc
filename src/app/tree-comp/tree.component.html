@@ -1,0 +1,14 @@
+<div *ngFor="let node of treeData" class="tree-node">
+    <div  class="node-container">
+      <div class="node-item">
+        <button *ngIf="node.children?.length" (click)="toggleNode(node)">
+            {{ node.collapsed ? '+' : '-' }}
+          </button>
+        {{ node.name }}
+        
+    </div>
+    <div *ngIf="!node.collapsed && node.children">
+        <tree-comp [treeData]="node.children"></tree-comp>
+      </div>
+  </div>
+  
