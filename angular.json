@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cdk-tree": {
+    "treeview-poc": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/cdk-tree",
+            "outputPath": "dist/treeview-poc",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cdk-tree:build:production"
+              "buildTarget": "treeview-poc:build:production"
             },
             "development": {
-              "buildTarget": "cdk-tree:build:development"
+              "buildTarget": "treeview-poc:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "cdk-tree:build"
+            "buildTarget": "treeview-poc:build"
           }
         },
         "test": {

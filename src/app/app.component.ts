@@ -8,7 +8,7 @@ import { TreeNode } from './tree-comp/tree.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit{
-  title = 'cdk-tree';
+  title = 'treeview-poc';
 
   treeData = [
     {

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'cdk-tree' title`, () => {
+  it(`should have the 'treeview-poc' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cdk-tree');
+    expect(app.title).toEqual('treeview-poc');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cdk-tree');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, treeview-poc');
   });
 });
